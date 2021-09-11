@@ -34,4 +34,4 @@ const arrayForCSV = ensureFirstRowHasAllKeys(
   rows.map((r) => processResult(processComment(r)))
 )
 
-writeCSV(Deno.args[0].replace('.json', '.csv'), arrayForCSV)
+await writeCSV(Deno.args[0].replace('.json', '.csv'), arrayForCSV)
