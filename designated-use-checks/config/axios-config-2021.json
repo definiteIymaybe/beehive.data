@@ -9,5 +9,18 @@
     "eventDate": null,
     "rowsCount": 0,
     "startRow": 0
+  },
+  "headers": {
+    "Host": "tr.mos.ru",
+    "Connection": "keep-alive",
+    "Pragma": "no-cache",
+    "Cache-Control": "no-cache",
+    "Accept": "application/json",
+    "DNT": "1",
+    "Content-Type": "application/json",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty",
+    "Referer": "https://tr.mos.ru/widget-gin/"
   }
 }
