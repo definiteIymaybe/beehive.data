@@ -1,4 +1,5 @@
 {
+  "method": "post",
   "data": {
     "cadastralNumber": null,
     "address": null,
