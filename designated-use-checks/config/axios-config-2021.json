@@ -1,0 +1,12 @@
+{
+  "data": {
+    "cadastralNumber": null,
+    "address": null,
+    "isObjectsCountNeed": true,
+    "publishDateFrom": "01.01.2021",
+    "publishDateTo": null,
+    "eventDate": null,
+    "rowsCount": 0,
+    "startRow": 0
+  }
+}
