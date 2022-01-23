@@ -2,6 +2,9 @@ import { readJSON, writeCSV } from "https://deno.land/x/flat@0.0.13/mod.ts";
 
 const jsonPath = Deno.args[0];
 
+console.log("Deno args", Deno.args);
+console.log("jsonPath", jsonPath);
+
 const replaceMap = {
   notAllowed: {
     from: `Для проведения контрольных мероприятий по определению фактического использования объектов для целей налогообложения на объект допущены не были`,
