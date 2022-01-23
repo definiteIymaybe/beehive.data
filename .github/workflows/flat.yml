@@ -26,6 +26,8 @@ jobs:
         uses: denoland/setup-deno@main
         with:
           deno-version: v1.x
+      - name: disable ssl
+        run: git config http.sslVerify false
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
