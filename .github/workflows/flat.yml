@@ -20,12 +20,10 @@ jobs:
         with:
           deno-version: v1.x
 
-#       - name: Fetch data
-#         uses: githubocto/flat@v3
-#         with:
-#           http_url: https://tr.mos.ru/widget-gin/api/ginobjects
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://raw.githubusercontent.com/definiteIymaybe/beehive.data/master/designated-use-checks/data/2021/ginobjects.json
 #           axios_config: designated-use-checks/config/axios-config-2021.json
-#           downloaded_filename: designated-use-checks/data/2021/ginobjects.json
-#           postprocess: designated-use-checks/scripts/process-response.js
-      - name: run postprocess script
-        run: deno run -q -A --unstable designated-use-checks/scripts/process-response.js designated-use-checks/scripts/process-response.js
+          downloaded_filename: designated-use-checks/data/2021/ginobjects.json
+          postprocess: designated-use-checks/scripts/process-response.js
