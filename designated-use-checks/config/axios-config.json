@@ -3,8 +3,8 @@
   "data": {
     "cadastralNumber":null,
     "address":null,
-    "publishDateFrom":"01.01.2021",
-    "publishDateTo":"31.12.2021",
+    "publishDateFrom":"01.01.2022",
+    "publishDateTo":null,
     "meetingDate":null,
     "startRow":0,
     "rowsCount":0,
