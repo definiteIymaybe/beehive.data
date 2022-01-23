@@ -15,9 +15,9 @@ jobs:
       - name: download cert
         run: |
           echo '::echo::on'
-          curl https://gogetssl-cdn.s3.eu-central-1.amazonaws.com/wiki/gogetssl-rsa-dv-ca.crt > /etc/ssl/certs/gogetssl.crt
+          sudo curl https://gogetssl-cdn.s3.eu-central-1.amazonaws.com/wiki/gogetssl-rsa-dv-ca.crt > /etc/ssl/certs/gogetssl.crt
       - name: chmod cert 
-        run: chmod 644 /etc/ssl/certs/gogetssl.crt
+        run: sudo chmod 644 /etc/ssl/certs/gogetssl.crt
       - name: update ca
         run: sudo update-ca-certificates
       - name: Check out repo
