@@ -10,7 +10,7 @@ jobs:
   scheduled:
     runs-on: ubuntu-latest
     env: 
-      # because tr.mos.ru's certificate chain is broken
+      # tr.mos.ru's certificate chain is broken
       NODE_TLS_REJECT_UNAUTHORIZED: 0
     steps:
       - name: Check out repo
@@ -22,7 +22,7 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: http://tr.mos.ru/widget-gin/api/ginobjects
+          http_url: https://tr.mos.ru/widget-gin/api/ginobjects
           downloaded_filename: designated-use-checks/data/2021/ginobjects.json
           axios_config: designated-use-checks/config/axios-config-2021.json
           postprocess: designated-use-checks/scripts/process-response.js
