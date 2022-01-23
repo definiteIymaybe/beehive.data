@@ -1,14 +1,14 @@
 {
   "method": "post",
   "data": {
-    "cadastralNumber": null,
-    "address": null,
-    "isObjectsCountNeed": true,
-    "publishDateFrom": "01.01.2021",
-    "publishDateTo": null,
-    "eventDate": null,
-    "rowsCount": 0,
-    "startRow": 0
+    "cadastralNumber":null,
+    "address":null,
+    "publishDateFrom":"01.01.2021",
+    "publishDateTo":"31.12.2021",
+    "meetingDate":null,
+    "startRow":0,
+    "rowsCount":0,
+    "isObjectsCountNeed":true
   },
   "headers": {
     "Host": "tr.mos.ru",
