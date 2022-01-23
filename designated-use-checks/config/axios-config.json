@@ -15,6 +15,6 @@
     "Connection": "keep-alive",
     "Pragma": "no-cache",
     "Cache-Control": "no-cache",
-    "Accept": "application/json",
+    "Accept": "application/json"
   }
 }
