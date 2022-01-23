@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: update ca
-      - run: |
+        run: |
           echo '::echo::on'
           sudo update-ca-certificates
       - name: Check out repo
