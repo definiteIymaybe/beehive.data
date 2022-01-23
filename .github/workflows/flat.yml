@@ -15,7 +15,7 @@ jobs:
           echo '::echo::on'
           sudo curl https://gogetssl-cdn.s3.eu-central-1.amazonaws.com/wiki/gogetssl-rsa-dv-ca.crt > /usr/local/share/ca-certificates/gogetssl-rsa-dv-ca.crt
           sudo chmod 644 /usr/local/share/ca-certificates/gogetssl-rsa-dv-ca.crt
-          update-ca-certificates
+          sudo update-ca-certificates
       - name: Check out repo
         uses: actions/checkout@v2
       - name: Setup deno
