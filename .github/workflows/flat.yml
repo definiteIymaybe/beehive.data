@@ -12,16 +12,12 @@ jobs:
     env: 
       SSL_CERT_DIR: /etc/ssl/certs
     steps:
-      - name: download cert
-        run: |
-          echo '::echo::on'
-          sudo curl https://gogetssl-cdn.s3.eu-central-1.amazonaws.com/wiki/gogetssl-rsa-dv-ca.crt > /etc/ssl/certs/gogetssl.crt
-      - name: chmod cert 
-        run: sudo chmod 644 /etc/ssl/certs/gogetssl.crt
-      - name: update ca
-        run: sudo update-ca-certificates
       - name: Check out repo
         uses: actions/checkout@v2
+      - name: add cert 
+        run: cp designated-use-checks/config/gogetssl-rsa-dv-ca.crt /etc/ssl/certs
+      - name: update ca
+        run: sudo update-ca-certificates
       - name: Setup deno
         uses: denoland/setup-deno@main
         with:
