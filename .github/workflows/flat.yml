@@ -15,9 +15,13 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
       - name: add cert 
-        run: sudo cp designated-use-checks/config/gogetssl-rsa-dv-ca.crt /etc/ssl/certs
+        run: |
+          sudo cp designated-use-checks/config/gogetssl-rsa-dv-ca.crt /etc/ssl/certs
+          sudo chmod 644 gogetssl-rsa-dv-ca.crt
       - name: update ca
-        run: sudo update-ca-certificates
+        run: sudo update-ca-certificates -v
+      - name: test cert
+        run: openssl s_client -connect tr.mos.ru:443 -CApath /etc/ssl/certs
       - name: Setup deno
         uses: denoland/setup-deno@main
         with:
