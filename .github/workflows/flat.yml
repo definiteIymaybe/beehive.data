@@ -10,6 +10,10 @@ jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
+      - name: update ca
+      - run: |
+          echo '::echo::on'
+          sudo update-ca-certificates
       - name: Check out repo
         uses: actions/checkout@v2
       - name: Setup deno
