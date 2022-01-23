@@ -14,7 +14,7 @@ jobs:
         run: |
           echo '::echo::on'
           curl https://gogetssl-cdn.s3.eu-central-1.amazonaws.com/wiki/gogetssl-rsa-dv-ca.crt > /usr/local/share/ca-certificates/gogetssl.crt
-          chmod 644 /usr/local/share/ca-certificates/gogetssl.crt
+          sudo chmod 644 /usr/local/share/ca-certificates/gogetssl.crt
           sudo update-ca-certificates
       - name: Check out repo
         uses: actions/checkout@v2
