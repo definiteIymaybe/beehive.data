@@ -15,7 +15,7 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
       - name: add cert 
-        run: cp designated-use-checks/config/gogetssl-rsa-dv-ca.crt /etc/ssl/certs
+        run: sudo cp designated-use-checks/config/gogetssl-rsa-dv-ca.crt /etc/ssl/certs
       - name: update ca
         run: sudo update-ca-certificates
       - name: Setup deno
