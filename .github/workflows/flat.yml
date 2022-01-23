@@ -25,5 +25,4 @@ jobs:
           http_url: https://tr.mos.ru/widget-gin/api/ginobjects
           axios_config: designated-use-checks/config/axios-config.json
           downloaded_filename: designated-use-checks/data/2022/ginobjects.json
-#           postprocess: designated-use-checks/scripts/process-response.js
-          
+          postprocess: designated-use-checks/scripts/process-response.js
